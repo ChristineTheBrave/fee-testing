@@ -38,6 +38,16 @@
           expect( result ).to.be.a('number');
           expect( result ).to.equal(720);
         });
+        it('should indicate input is not a number', function() {
+          let result = window.calc.factorial('Whats good?');
+          expect(result).to.be.undefined;
+        });
+        it('should handle the input of 0', function() {
+          let result = window.calc.factorial(0);
+          expect( result ).to.be.a('number');
+          expect( result ).to.equal(1);
+
+        });
       });
     });
 

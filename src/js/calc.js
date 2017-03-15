@@ -34,7 +34,7 @@
      * @return {Number}            The final factorial value
      */
     window.calc.factorial = function factorial(topNumber) {
-        const total = 0;
+        let total = 1;
 
         if (typeof(topNumber) !== 'number') {
             return 0;
@@ -45,6 +45,6 @@
         }
 
         return total;
-    }
+    };
 
 })();

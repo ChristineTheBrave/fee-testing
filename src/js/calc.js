@@ -12,7 +12,7 @@
         let total = 0;
 
         if (!numbers) {
-            return total;
+            return NaN;
         }
 
         numbers.forEach(function addThem(num) {

@@ -1,6 +1,7 @@
 (function() {
     'use strict';
 
+    let expect = chai.expect
 
     describe('math module', function() {
       describe('sum function', function() {
